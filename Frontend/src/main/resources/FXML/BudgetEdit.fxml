@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="no.idatt1002.controller.Budget.BudgetEditController" prefHeight="200.0" maxHeight="200.0" prefWidth="400.0" maxWidth="400.0">
+    <Label fx:id="title" style="-fx-text-fill: Black; -fx-font-size: 3em; -fx-font-family: Arial"/>
+    <GridPane hgap="32">
+        <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+        </rowConstraints>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-text-fill: Black; -fx-font-size: 1.5em; -fx-font-family: Arial" text="Kategori">
+            <GridPane.margin>
+                <Insets left="16.0" />
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="category" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-text-fill: Black; -fx-font-size: 1.5em; -fx-font-family: Arial" text="Sum">
+            <GridPane.margin>
+                <Insets left="16.0" />
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="sum" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label fx:id="priorityLabel" visible="false" style="-fx-text-fill: Black; -fx-font-size: 1.5em; -fx-font-family: Arial" alignment="CENTER" text="Prioritet:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="16.0" />
+            </GridPane.margin>
+        </Label>
+        <ComboBox visible="false" fx:id="priorityChoice" GridPane.columnIndex="1" GridPane.rowIndex="2" promptText="Velg prioritet"
+                  prefHeight="25.0" prefWidth="100.0"/>
+        <Label visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="error" style="-fx-background-color: black; -fx-padding: 1em; -fx-background-radius: 0.5em;" textFill="WHITE"/>
+    </GridPane>
+    <Button text="Fullfør" onAction="#editElement"/>
+</VBox>

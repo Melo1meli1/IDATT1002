@@ -1,0 +1,92 @@
+
+
+#Background {
+  -fx-background-color: #E7EDF2;
+}
+
+#mainScrollPane > .viewport {
+  -fx-background-color: transparent;
+}
+
+#mainScrollPane {
+  -fx-background-color: transparent;
+}
+#budgetScrollPane > .viewport {
+  -fx-background-color: white;
+}
+
+#budgetScrollPane {
+  -fx-background-color: transparent;
+}
+
+.scroll-bar .scroll-bar:horizontal{
+  -fx-min-height: 0;
+  -fx-pref-height: 0;
+  -fx-max-height: 0;
+  -fx-min-width: 0;
+  -fx-pref-width: 0;
+  -fx-max-width: 0;
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-opacity: 0;
+  -fx-scale-y: 0;
+  -fx-border-color: transparent;
+  -fx-border-insets: 0;
+  visibility: hidden;
+  display: none;
+}
+
+#budgetButtonRed{
+  -fx-font-family: Arial;
+  -fx-font-size: 2em;
+  -fx-background-color: #dc0428;
+  -fx-background-radius: 16;
+  -fx-text-fill: #ffffff;
+}
+
+#budgetButtonRed:hover{
+  -fx-background-color: #ca0728;
+  -fx-cursor: hand;
+}
+
+#budgetElement:focused{
+  -fx-border-color: #000000;
+}
+
+#budgetElement:hover{
+  -fx-cursor: hand;
+}
+
+#budgetElementCategory:hover{
+  -fx-background-color: #000000;
+  -fx-font-weight: bold;
+  -fx-underline: true;
+}
+
+#budgetElementCategory{
+  -fx-background-color: #212529;
+}
+
+
+.scroll-bar:vertical > .thumb{
+  -fx-background-color: #ca0728;
+}
+
+#budgetMainScrollPane.scroll-bar .scroll-bar:horizontal{
+  -fx-min-height: 0;
+  -fx-pref-height: 0;
+  -fx-max-height: 0;
+  -fx-min-width: 0;
+  -fx-pref-width: 0;
+  -fx-max-width: 0;
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-opacity: 0;
+  -fx-scale-y: 0;
+  -fx-border-color: transparent;
+  -fx-border-insets: 0;
+  visibility: hidden;
+  display: none;
+}

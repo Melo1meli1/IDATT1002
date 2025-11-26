@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox maxHeight="350.0" maxWidth="500.0"
+      minHeight="350.0" minWidth="500.0" prefHeight="350.0" prefWidth="500.0"
+      style="-fx-background-color: White; -fx-background-radius: 16;" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.idatt1002.controller.Budget.BudgetExpenseController" >
+    <Label text="Legg til utgift-kategori">
+        <font>
+            <Font size="27.0" />
+        </font>
+        <VBox.margin>
+            <Insets left="16"/>
+        </VBox.margin>
+    </Label>
+    <GridPane hgap="32">
+        <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="60.0" />
+        </rowConstraints>
+
+        <Label text="Kategori:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="16.0" />
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="category" GridPane.columnIndex="1" GridPane.rowIndex="0" promptText="Kategori">
+            <GridPane.margin>
+                <Insets right="16.0" />
+            </GridPane.margin>
+        </TextField>
+        <Label alignment="CENTER" text="Sum:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="16.0" />
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="sum" GridPane.columnIndex="1" GridPane.rowIndex="1" promptText="sum">
+            <GridPane.margin>
+                <Insets right="16.0" />
+            </GridPane.margin>
+        </TextField>
+        <Label alignment="CENTER" text="Prioritet:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="16.0" />
+            </GridPane.margin>
+        </Label>
+        <ComboBox fx:id="priorityChoice" GridPane.columnIndex="1" GridPane.rowIndex="2" promptText="Velg prioritet"
+                  prefHeight="25.0" prefWidth="100.0"/>
+        <Label visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="error" style="-fx-background-color: black; -fx-padding: 1em; -fx-background-radius: 0.5em;" textFill="WHITE">
+        </Label>
+        <Button mnemonicParsing="false" onAction="#addExpense" style="-fx-background-color: #dc0428; -fx-background-radius: 16;" text="Legg til" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </GridPane>
+</VBox>
+

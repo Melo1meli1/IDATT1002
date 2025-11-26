@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1336.0" prefWidth="1366.0" styleClass="Background" stylesheets="@../styles/default.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.idatt1002.controller.Transaction.TransactionController">
+
+   <fx:include source="NavBar.fxml" />
+   <ScrollPane hbarPolicy="NEVER" layoutY="80.0" maxHeight="Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1366.0">
+      <AnchorPane prefHeight="1000.0" prefWidth="1364.0" styleClass="Background">
+
+         <Button fx:id="addButton" layoutX="158.0" layoutY="112.0" mnemonicParsing="false" onAction="#addTransaction" onMouseEntered="#buttonHover" onMouseExited="#buttonExited" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #dc0428; -fx-background-radius: 10;            -fx-text-fill: #ffffff; -fx-font-size: 2em; -fx-font-weight: 500;            -fx-font-family: Verdana" text="Legg til" />
+         <VBox layoutX="158.0" layoutY="173.0" prefHeight="361.0" prefWidth="1080.0" style="-fx-background-color: WHITE; -fx-spacing: 16;-fx-background-radius: 15; -fx-max-width: 1080; -fx-min-height: 250;          -fx-hbar-policy: NEVER;">
+            <Label style="-fx-font-size: 2em; -fx-font-weight: 800" text="Utgifter">
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox maxWidth="968.0" prefHeight="35.0" prefWidth="770" style="-fx-background-color: transparent; -fx-font-family: Verdana; -fx-font-size: 1em; -fx-text-fill: BLACK; -fx-font-weight: 400;   -fx-background-radius: 15;    -fx-max-width: 770; -fx-pref-height: 16;">
+               <HBox alignment="CENTER" fillHeight="false" spacing="48" style="-fx-padding: 0, 16, 0, 16">
+                  <Label prefWidth="128" style="-fx-background-color: TRANSPARENT; -fx-text-fill: #212529; -fx-font-weight: 800; -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT;" text="Sum">
+
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label prefWidth="128" style="-fx-background-color: TRANSPARENT; -fx-font-weight: 800;            -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT; -fx-text-fill: #212529;" text="Melding">
+
+                  </Label>
+                  <Label prefWidth="128" style="-fx-background-color: TRANSPARENT;          -fx-font-weight: 800; -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT; -fx-text-fill: #212529;  " text="Kategori">
+                     <font>
+                        <Font />
+                     </font>
+                  </Label>
+               </HBox>
+               <Region HBox.hgrow="ALWAYS" />
+               <HBox alignment="BASELINE_CENTER" spacing="48">
+                  <Label prefHeight="23.0" prefWidth="63.0" style="-fx-background-color: TRANSPARENT;          -fx-font-weight: 800; -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT; -fx-text-fill: #212529;  " text="Dato">
+                     <font>
+                        <Font />
+                     </font>
+                  </Label>
+               </HBox>
+               <VBox.margin>
+                  <Insets bottom="-15.0" left="54.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxWidth="968.0" prefHeight="5.0" prefWidth="958.0" style="-fx-background-color: #212529; -fx-background-radius: 15;    -fx-max-width: 958; -fx-pref-height: 2;">
+               <VBox.margin>
+                  <Insets left="54.0" />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane id="mainScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="233.0" prefWidth="1082.0" stylesheets="@../styles/default.css" HBox.hgrow="NEVER">
+               <VBox fx:id="expenseLayout" alignment="CENTER" prefHeight="200.0" prefWidth="1048.0" spacing="10.0" />
+            </ScrollPane>
+         </VBox>
+         <VBox layoutX="158.0" layoutY="580.0" prefHeight="361.0" style="-fx-background-color: WHITE;          -fx-spacing: 16;-fx-background-radius: 15; -fx-max-width: 1080; -fx-min-height: 250;          -fx-hbar-policy: NEVER;">
+            <Label style="-fx-font-size: 2em; -fx-font-weight: 800;" text="Inntekter">
+               <padding>
+                  <Insets left="20.0" top="15.0" />
+               </padding>
+            </Label>
+            <HBox maxWidth="968.0" prefHeight="35.0" prefWidth="770" style="-fx-background-color: transparent; -fx-font-family: Verdana; -fx-font-size: 1em; -fx-text-fill: BLACK; -fx-font-weight: 400;   -fx-background-radius: 15;    -fx-max-width: 770; -fx-pref-height: 16;">
+               <HBox alignment="CENTER" fillHeight="false" spacing="48" style="-fx-padding: 0, 16, 0, 16">
+                  <Label prefWidth="128" style="-fx-background-color: TRANSPARENT; -fx-text-fill: #212529; -fx-font-weight: 800; -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT;" text="Sum">
+
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label prefWidth="128" style="-fx-background-color: TRANSPARENT; -fx-font-weight: 800;            -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT; -fx-text-fill: #212529;" text="Melding">
+
+                  </Label>
+                  <Label prefWidth="128" style="-fx-background-color: TRANSPARENT;          -fx-font-weight: 800; -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT; -fx-text-fill: #212529;  " text="Kategori">
+                     <font>
+                        <Font />
+                     </font>
+                  </Label>
+               </HBox>
+               <Region HBox.hgrow="ALWAYS" />
+               <HBox alignment="BASELINE_CENTER" spacing="48">
+                  <Label prefHeight="23.0" prefWidth="63.0" style="-fx-background-color: TRANSPARENT;          -fx-font-weight: 800; -fx-font-size: 1.5em; -fx-alignment: CENTER_LEFT; -fx-text-fill: #212529;  " text="Dato">
+                     <font>
+                        <Font />
+                     </font>
+                  </Label>
+               </HBox>
+               <VBox.margin>
+                  <Insets bottom="-15.0" left="54.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxWidth="968.0" prefHeight="5.0" prefWidth="958.0" style="-fx-background-color: #212529; -fx-background-radius: 15;    -fx-max-width: 958; -fx-pref-height: 2;">
+               <VBox.margin>
+                  <Insets left="54.0" />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane id="mainScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="1080.0" stylesheets="@../styles/default.css" HBox.hgrow="NEVER">
+               <VBox fx:id="incomeLayout" alignment="CENTER" prefHeight="200.0" prefWidth="1048.0" spacing="10.0" />
+            </ScrollPane>
+         </VBox>
+         <Label layoutX="153.0" layoutY="26.0" style="-fx-font-weight: 800;" text="Transaksjoner">
+            <font>
+               <Font size="40.0" />
+            </font>
+         </Label>
+         <HBox fx:id="Underline" layoutX="153.0" layoutY="83.0" maxWidth="968.0" prefHeight="5.0" prefWidth="270.0" style="-fx-background-color: #212529; -fx-background-radius: 15;    -fx-max-width: 958; -fx-pref-height: 2;" />
+      </AnchorPane>
+   </ScrollPane>
+</AnchorPane>

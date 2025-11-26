@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<Button xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="no.idatt1002.controller.Budget.BudgetElementController"
+        prefHeight="48.0" prefWidth="320.0" style="-fx-background-color: transparent" onAction="#editBudgetElement"
+        stylesheets="@../styles/default.css" id="budgetElement">
+    <graphic>
+        <StackPane>
+            <Label fx:id="sum" minWidth="320" maxWidth="320" prefWidth="320" minHeight="40" maxHeight="40"/>
+            <StackPane>
+                <Label fx:id="color"  minWidth="160" maxWidth="160" prefWidth="160" minHeight="40" maxHeight="40"
+                       StackPane.alignment="CENTER_LEFT"/>
+                <Label fx:id="category" minWidth="188" maxWidth="188" prefWidth="188" minHeight="40" maxHeight="40"
+                       id="budgetElementCategory"/>
+            </StackPane>
+        </StackPane>
+    </graphic>
+
+</Button>
