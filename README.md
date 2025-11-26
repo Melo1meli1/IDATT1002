@@ -1,2 +1,6 @@
 # IDATT1002
-This project was developed as part of the course IDATT1002
+This project was developed as part of the course IDATT1002 – Software Engineering at NTNU, within the Computer Engineering program. The goal of the assignment was to create a simple and user-friendly budgeting application that gives users a clear overview of their personal finances. The application serves as a tool for managing income, expenses, and budgeting, while also providing visual representations of financial data in an intuitive way.
+
+The solution was implemented as a standalone Java application using JavaFX for the user interface and MySQL for database storage. The project was carried out in collaboration with BN Bank, which acted as the client and provided requirements and feedback throughout the development process. The program includes user login, budget display, transaction overview, and editing of financial data. Visual charts are used to present the user’s financial situation in a clear and accessible manner.
+
+This project represents practical use of software development methods, teamwork, and communication with an external client. It demonstrates the process of moving from initial ideas and requirements to a functional application, within the scope of an introductory course in software engineering.
