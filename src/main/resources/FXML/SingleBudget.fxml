@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="48.0" maxWidth="320.0" minHeight="48.0" minWidth="320.0" prefHeight="48.0" prefWidth="320.0"
+           style="-fx-border-color: Black; -fx-border-radius: 10;" GridPane.rowIndex="1"
+           xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="no.idatt1002.controller.Budget.SingleBudgetController">
+    <Label fx:id="category" prefHeight="48.0" prefWidth="220.0"
+           style="-fx-background-color: #dc0428; -fx-background-radius: 10;" text="Eks" textFill="WHITE"
+           StackPane.alignment="CENTER_LEFT">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <StackPane.margin>
+            <Insets/>
+        </StackPane.margin>
+        <opaqueInsets>
+            <Insets left="10.0"/>
+        </opaqueInsets>
+        <effect>
+            <ColorAdjust/>
+        </effect>
+        <padding>
+            <Insets left="10.0"/>
+        </padding>
+    </Label>
+    <Label fx:id="sum" alignment="CENTER_RIGHT" layoutX="11.0" layoutY="11.0" prefHeight="44.0" prefWidth="80.0"
+           style="-fx-background-radius: 10;" text="1234567" StackPane.alignment="CENTER_RIGHT">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <opaqueInsets>
+            <Insets right="30.0"/>
+        </opaqueInsets>
+        <padding>
+            <Insets right="10.0"/>
+        </padding>
+    </Label>
+</StackPane>
+
+

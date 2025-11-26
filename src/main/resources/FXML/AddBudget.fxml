@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane layoutX="-3.0" layoutY="-1.0" maxHeight="320.0" maxWidth="758.0"
+        minHeight="320.0" minWidth="758.0" prefHeight="320.0" prefWidth="758.0"
+        style="-fx-background-color: White; -fx-background-radius: 16;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.idatt1002.controller.Budget.AddBudgetController">
+    <GridPane >
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="108.8" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.99999237060547" minWidth="10.0" prefWidth="133.2" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="70.4" minHeight="10.0" prefHeight="61.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="99.99999237060547" minHeight="10.0" prefHeight="62.000007629394524" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="64.19999237060549" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="142.39999999999998" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label alignment="CENTER" text="Inntekt">
+            <font>
+                <Font size="27.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label text="Kategori:" GridPane.rowIndex="1">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label alignment="CENTER" text="Sum:" GridPane.rowIndex="2">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Button onAction="#addIncome" mnemonicParsing="false" style="-fx-background-color: #dc0428; -fx-background-radius: 16;" text="Legg til" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+        </Button>
+        <TextField fx:id="category" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="sum" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </TextField>
+    </GridPane>
+</StackPane>
+
